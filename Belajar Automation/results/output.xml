@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-03-05T17:16:28.633932" rpa="false" schemaversion="5">
+<suite id="s1" name="Belajar Automation" source="C:\Users\lavin\Documents\Belajar Automation">
+<suite id="s1-s1" name="Tests" source="C:\Users\lavin\Documents\Belajar Automation\tests">
+<suite id="s1-s1-s1" name="CMS" source="C:\Users\lavin\Documents\Belajar Automation\tests\CMS">
+<suite id="s1-s1-s1-s1" name="Location Price" source="C:\Users\lavin\Documents\Belajar Automation\tests\CMS\Location Price">
+<suite id="s1-s1-s1-s1-s1" name="Locationprice" source="C:\Users\lavin\Documents\Belajar Automation\tests\CMS\Location Price\locationprice.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="User search location price" line="32">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:28.789711" level="INFO">Opening browser 'chrome' to base url 'https://new-cms-staging.parkee.app/sign-in/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-05T17:16:28.789288" elapsed="3.080495"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${idsigninemail}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:31.870137" elapsed="0.064321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:31.935144" level="INFO">Typing text 'qa.cloud@parkee.app' into text field 'id=signIn-email'.</msg>
+<arg>${idsigninemail}</arg>
+<arg>${emailuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:31.934768" elapsed="0.101500"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:32.037044" level="INFO">Typing password into text field 'id=signIn-password'.</msg>
+<msg time="2025-03-05T17:16:32.056720" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${idsigninpassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:32.036627" elapsed="0.080192"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:32.117443" level="INFO">Clicking button 'id=signIn-signInButton'.</msg>
+<arg>id=signIn-signInButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:32.117115" elapsed="0.059986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${gambarkucing}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:32.177403" elapsed="1.043091"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:33.221082" level="INFO">Clicking element '//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-16asuq9']//*[name()='svg']'.</msg>
+<arg>//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-16asuq9']//*[name()='svg']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.220784" elapsed="0.094216"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.315452" elapsed="0.017719"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:33.333859" level="INFO">Clicking element '//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location']'.</msg>
+<arg>//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.333511" elapsed="0.054277"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location Price']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.388273" elapsed="0.221285"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:33.610283" level="INFO">Clicking element '//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location Price']'.</msg>
+<arg>//div[@class='mnl__scrollbar__root MuiBox-root css-5is5xo simplebar-scrollable-y']//span[@class='mnl__nav__item__title MuiBox-root css-0'][normalize-space()='Location Price']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.609888" elapsed="0.109590"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=backoffice-location-price-new-price-btn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:33.719858" elapsed="1.327913"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-05T17:16:35.048692" level="INFO">Typing text 'test alvin' into text field 'id=backoffice-location-prices-search'.</msg>
+<arg>id=backoffice-location-prices-search</arg>
+<arg>text=test alvin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-05T17:16:35.048256" elapsed="0.181200"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=backoffice-locationPrice-table-locationZoneName-text-table</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-05T17:16:35.229882" elapsed="1.462225"/>
+</kw>
+<status status="PASS" start="2025-03-05T17:16:28.788201" elapsed="7.904279"/>
+</test>
+<status status="PASS" start="2025-03-05T17:16:28.652350" elapsed="8.040997"/>
+</suite>
+<status status="PASS" start="2025-03-05T17:16:28.651232" elapsed="8.043082"/>
+</suite>
+<status status="PASS" start="2025-03-05T17:16:28.650096" elapsed="8.045109"/>
+</suite>
+<status status="PASS" start="2025-03-05T17:16:28.648431" elapsed="8.047511"/>
+</suite>
+<status status="PASS" start="2025-03-05T17:16:28.636838" elapsed="8.059922"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Belajar Automation">Belajar Automation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Belajar Automation.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="CMS">Belajar Automation.Tests.CMS</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Location Price">Belajar Automation.Tests.CMS.Location Price</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Locationprice">Belajar Automation.Tests.CMS.Location Price.Locationprice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
